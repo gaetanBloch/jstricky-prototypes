@@ -20,3 +20,20 @@ Employee.prototype.sayGoodBye = () => {
 }
 
 emp1.sayGoodBye();
+
+class Human {
+  wave() {
+    console.log('Waving...');
+  }
+}
+
+class Person extends Human {
+  constructor(name) {
+    super();
+    this.name = name;
+  }
+}
+
+const gaetan = new Person('Gaetan');
+console.log(gaetan);
+gaetan.wave();
