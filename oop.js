@@ -25,3 +25,18 @@ console.log(a);
 
 const b = new Array(); // Same as []
 console.log(b);
+
+class Student {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name} and I'm ${this.age} years old`);
+  }
+}
+
+const student = new Student('Gaetan', 31);
+console.log(student);
+student.greet();
