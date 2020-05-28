@@ -19,3 +19,6 @@ const seb = new Employee('Seb', 32);
 
 console.log(gaetan);
 console.log(seb);
+
+const a = new Object(); // Same as {}
+console.log(a);
