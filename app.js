@@ -23,8 +23,11 @@ const boss = {
   title: 'CEO'
 }
 
-employee.__proto__ = companyMember;
-boss.__proto__ = companyMember;
+// employee.__proto__ = companyMember;
+// boss.__proto__ = companyMember;
+
+Object.setPrototypeOf(employee, companyMember);
+Object.setPrototypeOf(boss, companyMember);
 
 employee.greet();
 console.log(boss.company);
