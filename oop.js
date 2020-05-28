@@ -22,3 +22,6 @@ console.log(seb);
 
 const a = new Object(); // Same as {}
 console.log(a);
+
+const b = new Array(); // Same as []
+console.log(b);
