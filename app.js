@@ -4,7 +4,6 @@ const numbers = [1, 2, 3]; // new Array()
 const doubledNumbers = numbers.map(number => number * 2);
 console.log(doubledNumbers);
 
-
 const companyMember = {
   company: 'Google',
   greet() {
@@ -31,3 +30,9 @@ Object.setPrototypeOf(boss, companyMember);
 
 employee.greet();
 console.log(boss.company);
+
+const employeeAlt = Object.create(companyMember);
+employeeAlt.name = 'Gaetan';
+employeeAlt.age = 31;
+console.log(employeeAlt);
+employeeAlt.greet();
